@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route} from "react-router-dom"
+import logo from '../logo.svg';
+import HelperFunctions from '../APIHelper'
 
-import HouseCompetition from "./components/HouseCompetition";
-import HelperFunctions from './APIHelper'
-import './App.css';
-
-
-class App extends Component {
+class HouseCompetition extends Component{
 
   constructor() {
     super();
@@ -26,14 +22,12 @@ class App extends Component {
 
 
   }
-
-  render() {
-    return(
-    <BrowserRouter>
-      <Route path="/" component={HouseCompetition} />
-    </BrowserRouter>
+render(){
+  return (
+    <div>
+          {this.state.label}
+    </div>
   );
-  }
 }
-
-export default App;
+}
+export default HouseCompetition
