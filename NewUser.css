@@ -1,0 +1,61 @@
+
+
+
+body {
+  background: url('Photos/NewUser/Gold.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: lato;
+}
+
+
+legend {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-family: lato;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+
+fieldset {
+  color: white;
+  text-align: center;
+  border-radius:
+  font-family: lato;
+  display: inline-block;
+  margin-left: 230px;
+  letter-spacing: 7px;
+  font-weight: bold;
+  border-radius: 70px;
+  margin-top: 80px;
+}
+
+label {
+  display: inline-block;
+  width: 75px;
+  margin-right: 65px;
+
+}
+
+input {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-right: 50px;
+  display: inline-block;
+}
+
+
+button {
+  border-radius: 100px;
+  padding: 8px 15px 8px 15px;
+  background: url('Photos/NewUser/Shimmer.jpg');
+  background-position: left;
+  color: white;
+  cursor: pointer;
+  border-style: outset;
+
+}

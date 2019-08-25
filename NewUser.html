@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE>
+
+<html>
+
+  <head>
+
+      <title> Create your account </title>
+      <link rel = "stylesheet" href = "NewUser.css" type = "text/css">
+      <link rel = "icon" type = "image/ico" href = "Photos/HomePage/torch.png">
+
+  </head>
+
+
+
+  <body>
+
+    <form>
+
+      <fieldset>
+
+        <legend> Create an account </legend>
+
+      <p> Welcome! Please fill out the information below to get started! </p>
+
+      <div id = fieldContents>
+
+      <label> First Name: </label> <input type= "text" name="newUserFN" value="">
+
+      <br>
+      <br>
+
+      <label> Last Name: </label> <input type="text" name="newUserLN" value="">
+
+      <br>
+      <br>
+
+
+      <datalist id = "houseOptions">
+
+        <option value = "Copper">
+        <option value = "Platinum">
+        <option value = "Paladium">
+        <option value = "Titanium">
+        <option value = "Silver">
+
+      </datalist>
+
+
+      <label> House: </label> <input id = "pickHouse" list = "houseOptions">
+
+      <br>
+      <br>
+
+
+      <label> Username: </label> <input type="text" name="newUserUN" value="">
+
+      <br>
+      <br>
+
+
+
+      <label> Password: </label> <input type="password" value="" id="newUserPW">
+
+      <br>
+
+      <input type="checkbox" onclick="myFunction()"> Show Password
+
+      <br>
+      <br>
+
+
+    </div>
+
+      <button type="button" name="newUserSB">Submit</button>
+
+      <a href = "Homepage.html"> <button type="button" name="newUserMPB">Go Back</button></a>
+
+
+
+          <script>
+            function myFunction() {
+
+                 var x = document.getElementById("newUserPW");
+                   if (x.type === "password") {
+                     x.type = "text";
+                   }
+
+                   else {
+                     x.type = "password";
+                   }
+
+
+             }
+
+             </script>
+
+        </fieldset>
+
+      </form>
+
+  </body>
+
+</html>
