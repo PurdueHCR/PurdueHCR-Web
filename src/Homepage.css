@@ -1,0 +1,124 @@
+
+@font-face {
+  font-family: lato;
+  src: url(Fonts/HomePage/Lato.ttf);
+}
+
+body {
+   font-family: 'Lato', sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 1.7;
+   color: #eee;
+}
+
+.header {
+   height: 100%;
+   background-image:
+   /* linear-gradient(to right bottom,
+    rgba(231, 232, 155, 1),
+    rgba(30, 108, 217, 0.8)), */
+   url('Photos/HomePage/Fire.jpg');
+   background-size: cover;
+   background-position: top;
+   position: relative;
+   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.textbox {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.heading {
+   color: #fff;
+   text-transform: uppercase;
+   backface-visibility: hidden;
+   margin-bottom: 30px;
+}
+
+.title {
+   display: block;
+   font-size: 26px;
+   font-weight: 400;
+   letter-spacing: 5px;
+}
+
+.date{
+   display: block;
+   font-size: 18px;
+   font-weight: 700;
+   letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+   text-transform: uppercase;
+   text-decoration: none;
+   padding: 10px 20px;
+   display: inline-block;
+   border-radius: 100px;
+   transition: all .2s;
+   position: relative;
+}
+
+.btn:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+   transform: translateY(-1px);
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+
+}
+
+.btn-white {
+   background-color: #fff;
+   color: #777;
+   font-size: 14px;
+   /* font-weight: bold; */
+}
+
+.aboutbtn {
+  margin-left: 74%;
+  margin-top: -85px;
+  padding: 5px;
+  border-radius: 100px;
+  cursor: pointer;
+
+  background-color: #fff;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  letter-spacing: 1.7px;
+  color: #777;
+
+}
+
+
+.newuserbtn {
+
+  background-color: #fff;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: #777;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  cursor: pointer;
+
+  border-radius: 100px;
+  display: inline-block;
+  width: 15%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-left: 82%;
+  margin-top: -85px;
+}

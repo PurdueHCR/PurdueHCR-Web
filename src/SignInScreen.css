@@ -1,0 +1,75 @@
+
+html {
+  background: url('Photos/NewUser/goldenvines.jpg');
+}
+
+
+@font-face {
+  font-family: labtop;
+  src: url('Fonts/SignInPage/Labtop.ttf');
+}
+
+#accountLoginHeader {
+
+  font-family: labtop;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin-top: 207px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+#forgotPass {
+
+    padding-left: 10px;
+    font-family: labtop;
+    padding-left: 621px;
+
+}
+
+#fontUP {
+  font-family: labtop;
+  color: white;
+
+}
+
+#goBackButton {
+
+  border-radius: 16px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-family: labtop;
+  cursor: pointer;
+  margin-left: 25px;
+
+}
+
+#signInButton {
+  border-radius: 16px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-family: labtop;
+  cursor: pointer;
+  margin-left: 45px;
+}
+
+fieldset {
+  border-radius: 16px;
+  border-style: outset;
+  display: inline-block;
+  margin-left: 537px;
+  border-color: white;
+
+}
+
+
+a:visited {
+  color: white;
+}
+
+a:link {
+  color: #d7ee1d;
+}
