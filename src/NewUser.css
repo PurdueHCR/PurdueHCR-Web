@@ -2,7 +2,8 @@
 
 
 body {
-  background: url('Photos/NewUser/goldenvines.jpg');
+  /* background: url('Photos/NewUser/goldenvines.jpg'); */
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -12,7 +13,7 @@ body {
 
 
 legend {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 35px;
   font-family: lato;
@@ -23,9 +24,9 @@ legend {
 
 
 fieldset {
-  color: white;
+  color: black;
   text-align: center;
-  border-radius:
+  border-radius: none;
   font-family: lato;
   display: inline-block;
   margin-left: 230px;
@@ -61,4 +62,26 @@ button {
   cursor: pointer;
   border-style: outset;
 
+}
+
+
+.modal-content {
+  width: 100%;
+  clear = both;
+}
+
+.modal-content input {
+  width: 25%;
+  clear = both;
+}
+
+
+/* This is for the house blank b/c it was off */
+#house {
+  padding-left: 12px;
+}
+
+
+#checkbox {
+  padding-right: 10p
 }
