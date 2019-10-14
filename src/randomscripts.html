@@ -1,0 +1,35 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD8iqaRoxfgcdQhyYzsTjFm6uIVkjfBREs",
+    authDomain: "purdue-hcr-test.firebaseapp.com",
+    databaseURL: "https://purdue-hcr-test.firebaseio.com",
+    projectId: "purdue-hcr-test",
+    storageBucket: "purdue-hcr-test.appspot.com",
+    messagingSenderId: "295129748467",
+    appId: "1:295129748467:web:1426e40ef32c503f487886"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+
+<script>
+  function addPointLog(
+    log,
+    documentID = "",
+    preApproved = false,
+    house,
+    isRECGrantingAward = false
+  ) {
+    let user = firebase.auth().currentUser;
+  }
+</script>
