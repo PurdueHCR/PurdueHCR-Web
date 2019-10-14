@@ -26,66 +26,13 @@
 
       <p> Welcome! Please fill out the information below to get started! </p>
 
-      <div id = "fieldContents">
 
-      <label> First Name: </label> <input type= "text" name="newUserFN" value="">
-
-      <br>
-      <br>
-
-      <label> Last Name: </label> <input type="text" name="newUserLN" value="">
-
-      <br>
-      <br>
-
-
-      <datalist id = "houseOptions">
-
-        <option value = "Copper">
-        <option value = "Platinum">
-        <option value = "Paladium">
-        <option value = "Titanium">
-        <option value = "Silver">
-
-      </datalist>
-
-
-      <label> House: </label> <input id = "pickHouse" list = "houseOptions">
-
-      <br>
-      <br>
-
-
-      <label> Username: </label> <input type="text" name="newUserUN" value="">
-
-      <br>
-      <br>
-
-
-
-      <label> Password: </label> <input type="password" value="" id="newUserPW">
-
-      <br>
-
-      <input type="checkbox" onclick="showPassword()"> Show Password
-
-      <br>
-      <br>
-
-
-    </div>
-
-      <button type="button" name="newUserSB">Submit</button>
-
-      <a href = "Homepage.html"> <button type="button" name="newUserMPB">Go Back</button></a>
-
-
-
+        <!-- Ignore this script if you're just designing the web -->
         <!-- Showing the password during register -->
           <script>
             function showPassword() {
 
-                 var x = document.getElementById("newUserPW");
+                 var x = document.getElementById("signup-password");
                    if (x.type === "password") {
                      x.type = "text";
                    }
@@ -99,10 +46,115 @@
 
              </script>
 
-        </fieldset>
-
       </form>
 
   </body>
 
 </html>
+
+
+      <!-- THIS PART IS PART OF THE WEBDESIGNING -->
+
+      <!-- SIGN UP MODAL -->
+      <div id="modal-signup" class="modal">
+        <div class="modal-content">
+            <form id="signup-form">
+             <div class="input-field">
+              <label for="signup-email">Email address:</label>
+              <input type="email" id="signup-email" required /> <!--signup-email-->
+
+            </div>
+            <div class="input-field">
+
+              <label for="signup-password">Password:</label>
+              <input type="password" id="signup-password" required />
+            </div>
+
+            <!-- For the pull down menu for house, not sure if this is needed or not; however, just leave it -->
+            <datalist id = "houseOptions">
+
+              <option value = "Copper">
+              <option value = "Platinum">
+              <option value = "Paladium">
+              <option value = "Titanium">
+              <option value = "Silver">
+
+            </datalist>
+
+
+            <label id = "house">House:</label> <input id = "pickHouse" list = "houseOptions">
+
+            <br>
+            <br>
+         </form>
+       </div>
+
+
+            <!-- When you click the show password checkbox, the password will show -->
+            <input type="checkbox" onclick="showPassword()"> Show Password </input>
+
+            <br>
+            <br>
+
+            <button>Sign up</button>
+            <a href = "Homepage.html"> <button type="button" name="newUserMPB">Go Back</button></a>
+
+
+      </div>
+
+
+<!-- IGNORE THE REST OF THIS PAGE IF YOU'RE JUST DESIGNING THE WEBPAGE -->
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="auth.js"></script>
+<script src="index.js"></script>
+
+
+
+<!-- Call to firebase, authentication, and the firestore-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+
+    // This is the identifier. so Firebase knows that project to connect to
+    apiKey: "AIzaSyD8iqaRoxfgcdQhyYzsTjFm6uIVkjfBREs",
+
+    //
+    authDomain: "purdue-hcr-test.firebaseapp.com",
+    databaseURL: "https://purdue-hcr-test.firebaseio.com",
+    projectId: "purdue-hcr-test",
+    storageBucket: "purdue-hcr-test.appspot.com",
+    messagingSenderId: "295129748467",
+    appId: "1:295129748467:web:1426e40ef32c503f487886"
+
+  };
+  // Initialize Firebase, so you can initate things on the front end such as
+  // creating new users
+  firebase.initializeApp(firebaseConfig);
+
+  //make auth and firestore references
+
+  // auth is a constant that stores the reference for initializing the service for auth
+  // Later on, methods like for signing up and logging out will relate to that method
+  // We can use the auth method because of the fact that we imported it from the scripts
+  const auth = firebase.auth();
+
+
+  // Initializes firestore, stores reference of that initialization to db
+  // Can use this constant for communication with database, add/delete docs
+
+  const db = firebase.firestore();
+
+
+
+</script>
